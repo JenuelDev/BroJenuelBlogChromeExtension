@@ -1,10 +1,10 @@
 {
     "manifest_version": 3,
-    "name": "Hello Extensions",
-    "description": "Base Level Extension",
+    "name": "BroJenuel Extension",
+    "description": "Extension used to be updated on BroJenuel's Articles about technologies, programming, vuejs, etc.",
     "version": "1.0",
     "action": {
         "default_popup": "index.html",
-        "default_icon": "hello_extensions.png"
+        "default_icon": "Logo.png"
     }
 }
