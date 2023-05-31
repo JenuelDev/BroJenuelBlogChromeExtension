@@ -10,9 +10,12 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
   },
   "dependencies": {
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.7",
     "vue": "^3.3.2"
   },
   "devDependencies": {
+    "@iconify/vue": "^4.1.1",
     "@tsconfig/node18": "^2.0.1",
     "@types/node": "^18.16.8",
     "@vitejs/plugin-vue": "^4.2.3",
