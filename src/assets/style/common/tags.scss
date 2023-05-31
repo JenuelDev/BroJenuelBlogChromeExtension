@@ -1,0 +1,129 @@
+.tag {
+    padding: 1px 10px;
+    background-color: var(--background-secondary);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+
+    &.tag-sm {
+        font-size: 13px;
+    }
+
+    &.tag-electron,
+    &.tag-electron.builder {
+        background-color: #2b7a88;
+        color: #ffffff;
+    }
+
+    &.tag-Nuxt,
+    &.tag-nuxt,
+    &.tag-NuxtJs,
+    &.tag-nuxtjs {
+        background-color: #00dc82;
+        color: #0c0c0d;
+
+        &::after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='15' viewBox='0 0 20 20'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m12.146 8.583l-1.3-2.09a1.046 1.046 0 0 0-1.786.017l-5.91 9.908A1.046 1.046 0 0 0 4.047 18H7.96m12.083 0c.743 0 1.201-.843.82-1.505l-4.044-7.013a.936.936 0 0 0-1.638 0l-4.043 7.013c-.382.662.076 1.505.819 1.505h8.086z'/%3E%3C/svg%3E");
+        }
+    }
+
+    &.tag-supabase,
+    &.tag-SupaBase {
+        background-color: #22935e;
+        color: #e8e8e8;
+
+        &::after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='15' viewBox='0 0 20 20'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 14h8v7l8-11h-8V3z'/%3E%3C/svg%3E");
+        }
+    }
+
+    &.tag-Vue3,
+    &.tag-vue3,
+    &.tag-vue,
+    &.tag-vuejs,
+    &.tag-VueJs,
+    &.tag-vuepress {
+        background-color: #4fc08d;
+        color: rgb(46, 46, 46);
+        &::after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='15' viewBox='0 0 20 20'%3E%3Cpath fill='%2341b883' d='M24.4 3.925H30l-14 24.15L2 3.925h10.71l3.29 5.6l3.22-5.6Z'/%3E%3Cpath fill='%2341b883' d='m2 3.925l14 24.15l14-24.15h-5.6L16 18.415L7.53 3.925Z'/%3E%3Cpath fill='%2335495e' d='M7.53 3.925L16 18.485l8.4-14.56h-5.18L16 9.525l-3.29-5.6Z'/%3E%3C/svg%3E");
+        }
+    }
+
+    &.tag-vite,
+    &.tag-Vite,
+    &.tag-VITE {
+        background-color: #75229e;
+        color: white;
+
+        &::after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='15' viewBox='0 0 25 25'%3E%3Cg fill='none'%3E%3Cpath fill='url(%23vscodeIconsFileTypeVite0)' d='m29.884 6.146l-13.142 23.5a.714.714 0 0 1-1.244.005L2.096 6.148a.714.714 0 0 1 .746-1.057l13.156 2.352a.714.714 0 0 0 .253 0l12.881-2.348a.714.714 0 0 1 .752 1.05z'/%3E%3Cpath fill='url(%23vscodeIconsFileTypeVite1)' d='M22.264 2.007L12.54 3.912a.357.357 0 0 0-.288.33l-.598 10.104a.357.357 0 0 0 .437.369l2.707-.625a.357.357 0 0 1 .43.42l-.804 3.939a.357.357 0 0 0 .454.413l1.672-.508a.357.357 0 0 1 .454.414l-1.279 6.187c-.08.387.435.598.65.267l.143-.222l7.925-15.815a.357.357 0 0 0-.387-.51l-2.787.537a.357.357 0 0 1-.41-.45l1.818-6.306a.357.357 0 0 0-.412-.45z'/%3E%3Cdefs%3E%3ClinearGradient id='vscodeIconsFileTypeVite0' x1='6' x2='235' y1='33' y2='344' gradientTransform='translate(1.34 1.894) scale(.07142)' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2341D1FF'/%3E%3Cstop offset='1' stop-color='%23BD34FE'/%3E%3C/linearGradient%3E%3ClinearGradient id='vscodeIconsFileTypeVite1' x1='194.651' x2='236.076' y1='8.818' y2='292.989' gradientTransform='translate(1.34 1.894) scale(.07142)' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFEA83'/%3E%3Cstop offset='.083' stop-color='%23FFDD35'/%3E%3Cstop offset='1' stop-color='%23FFA800'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/g%3E%3C/svg%3E");
+        }
+    }
+
+    &.tag-javascript,
+    &.tag-JavaScript {
+        background-color: #f7df1e;
+        color: rgb(26, 26, 26);
+
+        &::after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 15 15'%3E%3Cpath fill='currentColor' d='M3 6a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm7.25 1.5a.75.75 0 0 0-.75.75v5a.25.25 0 0 1-.25.25h-1a.75.75 0 0 0 0 1.5h1A1.75 1.75 0 0 0 11 13.25v-5a.75.75 0 0 0-.75-.75Zm1.25 1.75v1c0 .966.784 1.75 1.75 1.75h.5a.25.25 0 0 1 .25.25v1a.25.25 0 0 1-.25.25h-1.5a.75.75 0 0 0 0 1.5h1.5a1.75 1.75 0 0 0 1.75-1.75v-1a1.75 1.75 0 0 0-1.75-1.75h-.5a.25.25 0 0 1-.25-.25v-1a.25.25 0 0 1 .25-.25h1.5a.75.75 0 0 0 0-1.5h-1.5a1.75 1.75 0 0 0-1.75 1.75Z'/%3E%3C/svg%3E");
+        }
+    }
+
+    &.tag-windiCss {
+        background-color: #20587a;
+        color: white;
+    }
+
+    &.tag-electron.builder {
+        background-color: rgb(61, 61, 233);
+        color: white;
+    }
+
+    &.tag-website {
+        background-color: rgb(3, 46, 161);
+        color: white;
+    }
+
+    &.tag-application {
+        background-color: rgb(197, 2, 155);
+        color: white;
+    }
+    &.tag-documentation {
+        background-color: rgb(197, 152, 2);
+        color: white;
+    }
+
+    &.tag-portfolio {
+        background-color: white;
+        color: black;
+    }
+
+    &.tag-health {
+        background-color: rgb(30, 105, 49);
+        color: rgb(255, 255, 255);
+    }
+
+    &.tag-typescript,
+    &.tag-TypeScript,
+    &.tag-TYPESCRIPT {
+        background-color: #2f74c0;
+        color: white;
+    }
+
+    &.tag-web {
+        background-color: #357abd;
+        color: white;
+    }
+
+    &.tag-programming,
+    &.tag-Programming,
+    &.tag-ComputerProgramming {
+        &::after {
+            content: "💻";
+            display: inline-block;
+            margin-left: 5px;
+        }
+    }
+}
