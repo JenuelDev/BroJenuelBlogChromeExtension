@@ -1,10 +1,15 @@
 {
     "manifest_version": 3,
-    "name": "BroJenuel Extension",
+    "name": "BroJenuel",
     "description": "Extension used to be updated on BroJenuel's Articles about technologies, programming, vuejs, etc.",
-    "version": "1.0",
+    "version": "1.1",
     "action": {
         "default_popup": "index.html",
         "default_icon": "Logo.png"
-    }
+    },
+    "permissions": [
+        "https://developer.chrome.com/*",
+        "https://*.google.com/*",
+        "https://brojenuel.com/*"
+    ]
 }
