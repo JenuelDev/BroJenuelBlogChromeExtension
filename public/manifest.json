@@ -6,10 +6,5 @@
     "action": {
         "default_popup": "index.html",
         "default_icon": "Logo.png"
-    },
-    "permissions": [
-        "https://developer.chrome.com/*",
-        "https://*.google.com/*",
-        "https://brojenuel.com/*"
-    ]
+    }
 }
