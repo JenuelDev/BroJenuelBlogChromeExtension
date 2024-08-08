@@ -1,118 +1,22 @@
-@font-face {
-    font-family: "kumbhsans";
-    src: url("./font/KumbhSans.ttf"); /* IE9 Compat Modes */
-    src: url("./font/KumbhSans.ttf") format("embedded-opentype"),
-        /* IE6-IE8 */ url("./font/KumbhSans.ttf") format("woff"),
-        /* Modern Browsers */ url("./font/KumbhSans.ttf") format("truetype"),
-        /* Safari, Android, iOS */ url("./font/KumbhSans.ttf") format("svg"); /* Legacy iOS */
-    font-display: swap;
-}
+@import "./fonts/inter/web/inter.css";
 
-@font-face {
-    font-family: "poly";
-    src: url("./font/Poly-Regular.ttf"); /* IE9 Compat Modes */
-    src: url("./font/Poly-Regular.ttf") format("embedded-opentype"),
-        /* IE6-IE8 */ url("./font/Poly-Regular.ttf") format("woff"),
-        /* Modern Browsers */ url("./font/Poly-Regular.ttf") format("truetype"),
-        /* Safari, Android, iOS */ url("./font/Poly-Regular.ttf") format("svg"); /* Legacy iOS */
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "anton";
-    src: url("./font/Anton-Regular.ttf"); /* IE9 Compat Modes */
-    src: url("./font/Anton-Regular.ttf") format("embedded-opentype"),
-        /* IE6-IE8 */ url("./font/Anton-Regular.ttf") format("woff"),
-        /* Modern Browsers */ url("./font/Anton-Regular.ttf") format("truetype"),
-        /* Safari, Android, iOS */ url("./font/Anton-Regular.ttf") format("svg"); /* Legacy iOS */
-    font-display: swap;
+:root {
+    font-feature-settings: "ss03", "cv02", "cv11";
+    font-variation-settings: normal;
+    --c-grey-100: #f4f6f8;
+    --c-grey-200: #e3e3e3;
+    --c-grey-300: #b2b2b2;
+    --c-grey-400: #7b7b7b;
+    --c-grey-500: #3d3d3d;
+    --c-blue-500: #2854e6;
+    --c-energy-500: #f9a826;
 }
 
 * {
     scroll-behavior: smooth;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-
-    --color: #0a192f;
-    --primary: #64ffdb;
-    --primary-darker: #349780;
-    --background: #0a192f;
-    --background-secondary-opacity-100: #12243d;
-    --background-secondary: rgba(249, 250, 251, 0.05);
-    --opacity-background: rgba(19, 33, 54, 0.85);
-    --light-background: #172a45;
-    --gray: #8892b0;
-    --gray-light: #a8b2d1;
-    --gray-lighter: #ccd6f6;
-    --gray-lightest: #e6f1ff;
-    --light: white;
-    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif !important;
-    color: var(--light);
-    transition: 0.3s;
+html {
+    font-family: Inter, sans-serif;
+    color: var(--c-grey-500);
 }
-
-.dark body {
-    --color: var(--gray-lighter);
-    --background-secondary-opacity-100: #12243d;
-    background-color: var(--background);
-    color: var(--gray-lightest);
-}
-.sepia body {
-    --color: #0a192f;
-    --primary: #319795;
-    --primary-darker: #246b6a;
-    --background: rgb(240, 231, 219);
-    --background-secondary-opacity-100: rgb(238, 222, 200);
-    --opacity-background: rgba(240, 231, 219, 0.8);
-    --background-secondary: rgba(229, 212, 190, 0.5);
-    --light-background: rgb(240, 231, 219);
-    background-color: var(--background);
-    color: var(--color);
-}
-
-.light body {
-    --color: #0a192f;
-    --primary: #319795;
-    --primary-darker: #246b6a;
-    --background: rgb(255, 255, 255);
-    --background-secondary-opacity-100: rgb(253, 253, 253);
-    --opacity-background: rgba(255, 255, 255, 0.8);
-    --background-secondary: rgba(212, 212, 212, 0.3);
-    --light-background: rgb(219, 219, 219);
-    background-color: var(--background);
-    color: var(--color);
-}
-
-p {
-    a {
-        position: relative;
-        font-style: italic;
-        color: var(--primary);
-
-        &:before {
-            content: "";
-            height: 2px;
-            position: absolute;
-            bottom: -5px;
-            width: 0;
-            background-color: var(--primary);
-            transition: all 0.2s;
-        }
-
-        &:hover {
-            color: var(--primary);
-
-            &::before {
-                width: 100%;
-            }
-        }
-    }
-}
-@import "./common/animate.scss";
-@import "./common/scrollbar.scss";
-@import "./common/content.scss";
-@import "./common/transitions.scss";
-@import "./common/tags.scss";

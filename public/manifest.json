@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "BroJenuel",
-    "description": "Extension used to be updated on BroJenuel's Articles about technologies, programming, vuejs, etc.",
-    "version": "1.1",
+    "name": "JenuelDev",
+    "description": "Extension used to be updated on JenuelDev's Articles about technologies, programming, vuejs, etc.",
+    "version": "2.0",
     "action": {
         "default_popup": "index.html",
         "default_icon": "Logo.png"
